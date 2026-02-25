@@ -1,0 +1,56 @@
+[project]
+name = "spac-kit-your-mission"
+version = "0.1.0.dev0"
+description = "CCSDS packet definitions for Your Mission instruments"
+authors = [
+    {name = "Your Name",email = "your.email@example.org"}
+]
+license = {text = "Apache-2.0"}
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "ccsdspy~=1.4.3",
+    "tqdm~=4.66.1",
+    "pandas~=2.3.3",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [
+    { include = "ccsds" }
+]
+
+[project.optional-dependencies]
+dev = [
+    "spac-kit~=0.3.0",
+    "pytest>=8.0.0,<9.0.0",
+    "bitstring~=4.3.1",
+    "flake8>=6.0.0,<7.0.0",
+    "pylint~=3.3.9",
+    "poetry~=2.2.1",
+    "sphinx_rtd_theme~=3.1.0",
+]
+
+# duplicate section to satisfy both Poetry and PEP 621 tools
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0,<9.0.0",
+    "spac-kit~=0.3.0",
+    "bitstring~=4.3.1",
+    "flake8>=6.0.0,<7.0.0",
+    "pylint~=3.3.9",
+    "poetry~=2.2.1",
+    "sphinx_rtd_theme~=3.1.0",
+]
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 120
+disable = [
+    "W0201",  # attribute-defined-outside-init
+    "R0801",  # Similar lines in 2 files
+    "C0116",  # missing-function-docstring
+    "R0903",  # too-few-public-methods
+]
