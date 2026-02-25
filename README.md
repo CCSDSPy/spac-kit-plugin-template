@@ -2,6 +2,11 @@
 
 This is a template repository for creating CCSDS packet definition plugins for the [SPaC-kit library](https://github.com/CCSDSPy/SPAC-kit).
 
+> [!IMPORTANT]
+> **This library is currently in active development.**
+>
+> Some functions are placeholders and may not yet have full implementations. Expect ongoing updates and new features as the library evolves.
+
 ## What is this template for?
 
 This template helps you quickly create a new Python package containing CCSDS packet definitions for your mission or instrument. These packet definitions are used by the SPaC-kit library to:
