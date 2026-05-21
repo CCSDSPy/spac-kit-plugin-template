@@ -9,9 +9,11 @@ license = {text = "Apache-2.0"}
 readme = "README.md"
 requires-python = ">=3.12,<4.0"
 dependencies = [
-    "ccsdspy~=1.4.3",
+    "ccsdspy>=1.4.2",
     "tqdm~=4.66.1",
     "pandas~=2.3.3",
+    "sphinx-autobuild (>=2025.8.25,<2026.0.0)",
+    "spac-kit @ file:///Users/loubrieu/PycharmProjects/new_ppp",
 ]
 
 [build-system]
@@ -25,7 +27,7 @@ packages = [
 
 [project.optional-dependencies]
 dev = [
-    "spac-kit~=0.3.0",
+    "spac-kit>=0.3.0",
     "pytest>=8.0.0,<9.0.0",
     "bitstring~=4.3.1",
     "flake8>=6.0.0,<7.0.0",

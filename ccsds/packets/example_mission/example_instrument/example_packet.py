@@ -33,6 +33,8 @@ example_health_status_fields = [
 
 # Create a VariableLength packet definition
 # Use FixedLength if your packets have a fixed size
-example_health_status = ccsdspy.VariableLength(example_health_status_fields)
-example_health_status.name = "example_health_status"
-example_health_status.apid = 100  # Replace with your actual APID
+example_health_status = ccsdspy.VariableLength(
+    example_health_status_fields,
+    apid=100,
+    name="example_health_status"
+)

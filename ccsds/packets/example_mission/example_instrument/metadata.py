@@ -22,6 +22,8 @@ metadata_example_fields = [
     ccsdspy.PacketField(name="CONFIG_ID", bit_length=32, data_type="uint"),
 ]
 
-metadata_example = ccsdspy.VariableLength(metadata_example_fields)
-metadata_example.name = "metadata_example"
-metadata_example.apid = 101  # Replace with your actual metadata APID
+metadata_example = ccsdspy.VariableLength(
+    metadata_example_fields,
+    name="example_metadata",
+    apid=101
+)
