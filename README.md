@@ -14,6 +14,8 @@ This template helps you quickly create a new Python package containing CCSDS pac
 - Generate comprehensive documentation for your packets
 - Create simulated datasets for testing
 
+In addition, this template provides basic standard continuous integration workflows using github actions and enable the publication of a Digital Object Identifier (DOI) using Zenodo to help with the citation of your work.
+
 ## Getting Started
 
 ### Users
