@@ -20,7 +20,7 @@ class TestExampleCase:
         local_dir = os.path.dirname(__file__)
         # Parameters: directory, compare_output, verbose, debug, create_output
         # Set create_output=True on first run to generate the reference file
-        compare(local_dir, True, True, False, create_output=False)
+        compare(local_dir, create_output=False)
 
 
 if __name__ == "__main__":
